@@ -103,27 +103,16 @@ public class JavaApplication2 {
             graph.put(i, new ArrayList<>());
         }
 
-        // Adicionando as arestas do grafo com seus pesos
-        addEdge(graph, 0, 1, 20); // A - 1
-        addEdge(graph, 0, 4, 16); // A - 20
-        addEdge(graph, 1, 3, 34); // 1 - 18
-        addEdge(graph, 1, 2, 35); // 1 - 16
-        addEdge(graph, 4, 2, 31); // 20 - 16
-        addEdge(graph, 4, 5, 16); // 20 - 23
-        addEdge(graph, 4, 3, 16); // 20 - 18
-        addEdge(graph, 4, 6, 34); // 20 - 34
-        addEdge(graph, 3, 2, 16); // 18 - 16
-        addEdge(graph, 2, 5, 25); // 16 - 23
-        addEdge(graph, 5, 6, 41); // 23 - 34
+        addEdge(graph, 0, 1, 20); //  Y - V peso 20
 
         // Mapeamento de índices para nomes dos vértices
-        String[] vertexNames = {"A", "1", "16", "18", "20", "23", "34"};
+        String[] vertexNames = {"Y", "V", "X", "A", "B", "N", "M", "P"};
         
         // Executando o algoritmo de Dijkstra para cada vértice como fonte
         for (int source = 0; source < n; source++) {
             System.out.println("------------------");
             System.out.println("Calculando a partir de " + vertexNames[source] + ":");
-            dijkstra(graph, source, n, vertexNames); // Executa Dijkstra para o vértice sourc
+            dijkstra(graph, source, n, vertexNames); // Executa Dijkstra para o vértice source
         }
     }
 
