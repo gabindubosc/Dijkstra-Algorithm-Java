@@ -123,8 +123,9 @@ public class JavaApplication2 {
         for (int source = 0; source < n; source++) {
             System.out.println("------------------");
             System.out.println("Calculando a partir de " + vertexNames[source] + ":");
-            dijkstra(graph, source, n, vertexNames); // Executa Dijkstra para o vértice source
+            dijkstra(graph, source, n, vertexNames); // Executa Dijkstra para o vértice sourc
         }
     }
+
 
 }
